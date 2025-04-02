@@ -25,6 +25,7 @@ class OrderController extends Controller
                 $search = str_replace('#', '', $request->search);
                 return $query->where('order_number', 'like', '%' . $search . '%');
             })
+            ->where('status', 'approved')
             ->orderbydesc('id')
             ->paginate(20);
         $customers = Customer::select('id', 'name')->orderbydesc('id')->get();

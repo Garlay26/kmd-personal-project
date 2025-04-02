@@ -149,7 +149,7 @@
                                 </tr>
                                 <tr>
                                     <td>Delivery Time :</td>
-                                    <td>{{ $order->deliveryTime->time }}</td>
+                                    <td>{{ optional($order->deliveryTime)->time }}</td>
                                 </tr>
                                 <tr>
                                     <td>Remark :</td>

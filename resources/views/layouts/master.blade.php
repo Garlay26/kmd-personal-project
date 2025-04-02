@@ -10,7 +10,7 @@
     <meta content="Active" name="author" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- App favicon -->
-    <link rel="shortcut icon" href="{{ URL::asset('assets/images/active_fav.png') }}">
+    <link rel="shortcut icon" href="{{ URL::asset('assets/images/kmd_logo.png') }}">
     @include('layouts.head-css')
     <style>
         /* Chrome, Safari, Edge, Opera */

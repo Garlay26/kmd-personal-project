@@ -168,7 +168,7 @@
                     id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
                     aria-expanded="false">
                     <img class="rounded-circle header-profile-user"
-                        src="{{asset('assets/images/active-logo.png')}}" alt="Image">
+                        src="{{asset('assets/images/kmd_logo.png')}}" alt="Image">
                     {{-- <span class="d-none d-xl-inline-block ms-1 fw-medium">{{ \Auth::user()->username }}</span> --}}
                     <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
                 </button>

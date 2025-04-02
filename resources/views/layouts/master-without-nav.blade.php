@@ -11,7 +11,7 @@
     <meta content="App Studio POS" name="description" />
     <meta content="Themesdesign" name="author" />
     <!-- App favicon -->
-    <link rel="shortcut icon" href="{{ URL::asset('assets/images/active-logo.png') }}">
+    <link rel="shortcut icon" href="{{ URL::asset('assets/images/kmd_logo.png') }}">
     @include('layouts.head-css')
 </head>
 
