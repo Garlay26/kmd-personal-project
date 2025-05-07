@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Customer;
 use App\Models\Order;
 use App\Models\OrderDetail;
+use App\Models\DeliveryTime;
+use App\Models\PaymentMethod;
 use App\Models\Product;
 use Illuminate\Http\Request;
 use Str;
@@ -28,7 +30,9 @@ class OrderController extends Controller
             ->where('status', 'approved')
             ->orderbydesc('id')
             ->paginate(20);
-        $customers = Customer::select('id', 'name')->orderbydesc('id')->get();
+        $customers = Customer::orderbydesc('id')->get();
+        $delivery_times = DeliveryTime::orderbydesc('id')->get();
+        $payment_methods = PaymentMethod::orderbydesc('id')->get();
         return view('order/list', ['orders' => $orders, 'customers' => $customers]);
     }
 
